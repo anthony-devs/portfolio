@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony devs</title>
+    <link rel="stylesheet" href="./index.css">
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
+ <!--      <link rel="stylesheet" href="font-awesome@6.4.0/css/all.min.css"></link> -->
+  </head>
+
+<body>
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some Features May not work properly on this device <br> Try using a bigger screen like a PC. <br> Note:
+                Not Everything is availlable for phones</p>
+        </div>
+    </div>
+
+
+    <div class="hero">
+        <div class="txts">
+            <h1>Hello I'm <br> Anthony Somtochukwu Ude</h1>
+
+            <p class="title">A Professional Developer</p>
+
+            <a target="_blank" href="https://www.upwork.com/freelancers/~01b67872407eb14b69" class="fill-button btn">
+                <span class="fill"></span>
+                <span class="text">Hire Me</span>
+            </a>
+            <a target="_blank" href="https://github.com/anthony-devs" class="bone btn">
+                <span class="one"></span>
+                <span class="text">Github</span>
+            </a>
+        </div>
+        <div class="left">
+            <img src="./me.png" alt="">
+
+        </div>
+
+
+    </div>
+
+    <div class="bottom">
+
+        <div class="whoami">
+            <div class="widget">
+                <div class="overlay">
+                    Hire Me
+
+
+                </div>
+                <img src="./me.png" alt="">
+
+            </div>
+
+
+            <div class="txts">
+                <div class="ttl">About Me</div>
+                <h1>4 Years Of Experience <br> In Development</h1>
+
+                <p>Since 2019, I've been making iOS, Android, Cross-Platform, Desktop and Web Applications as well as
+                    Defending Networks adn Systems accross the Internet</p>
+
+                <div class="accs">
+                    <ul>
+                        <li>
+                            <p>Web Development(React, Javascript, Blazor)</p>
+                        </li>
+                        <li>
+                            <p>Ethical Hacking</p>
+                        </li>
+                        <li>
+                            <p>Mobile App Development(Flutter)</p>
+                        </li>
+                        <li>
+                            <p>Desktop App Development(WPF C#)</p>
+                        </li>
+
+                        <li>
+                            <p>Game Development(Unity C#)</p>
+                        </li>
+
+                        <li>
+                            <p>iOS Development(SwiftUI)</p>
+                        </li>
+                        <li style="background: darkslateblue; border: solid 0.6px darkslateblue; color: white;">
+                            <p>Cybersecurity</p>
+                        </li>
+                        <li style="background: darkslateblue; border: solid 0.6px darkslateblue; color: white;">
+                            <p>Network Engineering</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <br>
+        <br>
+
+        <div class="contact">
+            <div class="left">
+                <h1>Ready To Get Any Project? <br> Meet With Me</h1>
+
+            <a rel='_blank' href="mailto: somtochukwuanthony460@gmail.com" class="btn hvr">Contact Me</a>
+
+            <div class="links">
+                <ul>
+                    <li> <a href="https://twitter.com/anthony_devs"><img src="./icons8-twitter.svg" alt=""></a> </li>
+                    <li><a href="https://www.freelancer.com/u/anthonydevs"><img src="./freelancer-com-seeklogo.com.svg"
+                                alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/anthony-devs-882b45263/"><img src="./icons8-linkedin.svg"
+                                alt=""></a></li>
+                </ul>
+            </div>
+            </div>
+            
+            <div class="right"> 
+                <div id="profile"></div>
+            </div>
+
+        </div>
+
+
+        <div class="customers">
+            <div class="arr">
+                int customers[] = {
+                <ul>
+                    <li><img src="https://www.alxafrica.com/wp-content/uploads/2022/12/logo-white.svg" alt="Alx"></li>,
+                    <li><img src="./icons8-microsoft.svg" alt=""></li>,
+                    <li><img src="./icons8-duolingo-logo.svg" alt=""></li>
+                </ul>
+                }
+
+
+            </div>
+            customers.append(this.user);
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+    const button = document.querySelector('.fill-button');
+    const fill = document.querySelector('.fill');
+    const one = document.querySelector('.one');
+    const Bone = document.querySelector('.bone');
+    button.addEventListener('mouseenter', () => {
+        fill.style.width = '84%';
+    });
+
+    button.addEventListener('mouseleave', () => {
+        fill.style.width = '0';
+    });
+
+    Bone.addEventListener('mouseenter', () => {
+        one.style.width = '74%'
+    });
+
+    Bone.addEventListener('mouseleave', () => {
+        one.style.width = '0'
+    });
+
+    // JavaScript to display the modal and handle close button
+    function showModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block";
+
+        var closeBtn = document.getElementsByClassName("close")[0];
+        closeBtn.addEventListener("click", closeModal);
+    }
+
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+
+    // Check if the device is a phone using media query
+    var isPhone = window.matchMedia("(max-width: 480px)").matches;
+
+    // Show modal if device is a phone
+    if (isPhone) {
+        showModal();
+    }
+
+
+
+</script>
+
+</html>
